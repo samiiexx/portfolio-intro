@@ -112,4 +112,4 @@ exports.image = image;
 exports.js = js;
 exports.serve = serve;
 exports.browser = browser;
-exports.all = series(php, html, style, js, image);
+exports.build = series(php, html, style, js, image);
