@@ -3,18 +3,20 @@
 =============================================*/
 
 /* Colors */
-$primary: rgb(250, 174, 123);
-$secondary: rgb(204, 139, 121);
+$primary: hsl(330, 100%, 31%);
+$secondary: hsla(120, 100%, 61%, 0.502);
+$tertiary: #38ff38;
+$orange: #eb4200;
 $success: #06af52;
 $danger: #ff6347;
 $warning: #ffc107;
 $light: #f8f9fa;
 $dark: #060606;
-$grey: #565655;
-$white: #ffffff;
+$grey: hsl(328, 6%, 55%);
+$white: hsl(0, 0%, 100%);
 
 /* Typography */
-$font-family: "Josefin Sans", sans-serif;
+$font-family: "Open Sans", sans-serif;
 $font-normal: 400;
 $font-bold: 700;
 

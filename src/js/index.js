@@ -1,13 +1,63 @@
 // Navigation Menu Toggler
-var header = document.querySelector(".js-header");
-var hamburgerMenu = document.querySelector(".hamburger-menu");
+// var header = document.querySelector(".js-header");
+// var hamburgerMenu = document.querySelector(".hamburger-menu");
 
-hamburgerMenu.addEventListener("click", function () {
-    header.classList.toggle("menu-open");
-});
+// hamburgerMenu.addEventListener("click", function () {
+//     header.classList.toggle("menu-open");
+// });
 
 // JQuery Scripts
 $(document).ready(function () {
+    $(document).on("click", "#btn-link", function () {
+        var tl = gsap.timeline();
+        tl.to("#btn-link", 1, {
+            y: -100,
+            opacity: 0,
+        })
+            .to(".hero-title", 1, {
+                color: "#38ff38",
+                ease: Power2.easeInOut,
+            })
+            .to(".hero-title", 1.5, {
+                y: -400,
+                opacity: 0,
+                ease: Power2.easeInOut,
+                delay: 2,
+            })
+            .fromTo(
+                ".overlay-1",
+                2,
+                {
+                    ease: Power2.easeInOut,
+                },
+                {
+                    delay: 1,
+                    top: "-110%",
+                    ease: Expo.easeInOut,
+                }
+            )
+            .to(".overlay-2", 2, {
+                delay: 1,
+                y: "-110%",
+                ease: Expo.easeInOut,
+            })
+            .fromTo(
+                ".content",
+                2,
+                {
+                    opacity: 0,
+                    x: -500,
+                    y: -200,
+                    ease: Power2.easeInOut,
+                },
+                {
+                    opacity: 1,
+                    x: 200,
+                    y: -200,
+                    ease: Power2.easeInOut,
+                }
+            );
+    });
     // Footer year
     var year = new Date().getFullYear();
     $("#footer-year").text(year);
