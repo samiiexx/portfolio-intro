@@ -10,40 +10,33 @@
 $(document).ready(function () {
     $(document).on("click", "#btn-link", function () {
         var tl = gsap.timeline();
-        tl.to("#btn-link", 1, {
+        tl.to("#btn-link", {
             y: -100,
             opacity: 0,
         })
-            .to(".hero-title", 1, {
-                color: "#38ff38",
-                ease: Power2.easeInOut,
-            })
-            .to(".hero-title", 1.5, {
+            .to(".hero-title", {
                 y: -400,
                 opacity: 0,
                 ease: Power2.easeInOut,
-                delay: 2,
             })
             .fromTo(
                 ".overlay-1",
-                2,
+                1.5,
                 {
                     ease: Power2.easeInOut,
                 },
                 {
-                    delay: 1,
                     top: "-110%",
                     ease: Expo.easeInOut,
                 }
             )
-            .to(".overlay-2", 2, {
-                delay: 1,
+            .to(".overlay-2", 1.5, {
                 y: "-110%",
                 ease: Expo.easeInOut,
             })
             .fromTo(
                 ".content",
-                2,
+                1.5,
                 {
                     opacity: 0,
                     x: -500,
