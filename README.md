@@ -7,6 +7,7 @@ This is a template for the intro to a personal portfolio.
 - [HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)
 - [SASS](https://sass-lang.com/)
 - [jQuery](https://jquery.com/)
+- [GSAP](https://greensock.com/)
 
 ## Requirements
  - NPM
@@ -17,6 +18,7 @@ This is a template for the intro to a personal portfolio.
     $ git clone git@github.com:samiiexx/portfolio-intro.git main
     $ cd main
     $ npm install
+    $ npm run build
 ```
 
 ## Running the project
@@ -24,7 +26,7 @@ Production directory is the `public` folder.\
 \
 Run a full build
 ```
-gulp all
+gulp build
 ```
 Watch files and run BrowserSync
 ```
