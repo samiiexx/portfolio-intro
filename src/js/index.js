@@ -36,10 +36,10 @@ $(document).ready(function () {
             })
             .fromTo(
                 ".content",
-                1.5,
+                1,
                 {
                     opacity: 0,
-                    x: -500,
+                    x: -200,
                     y: -200,
                     ease: Power2.easeInOut,
                 },
