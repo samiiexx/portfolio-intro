@@ -21,7 +21,7 @@ $(document).ready(function () {
             })
             .fromTo(
                 ".overlay-1",
-                1.5,
+                1,
                 {
                     ease: Power2.easeInOut,
                 },
@@ -30,8 +30,12 @@ $(document).ready(function () {
                     ease: Expo.easeInOut,
                 }
             )
-            .to(".overlay-2", 1.5, {
-                y: "-110%",
+            .to(".overlay-3", 0.5, {
+                y: "-210%",
+                ease: Expo.easeInOut,
+            })
+            .to(".overlay-2", 0.5, {
+                y: "-310%",
                 ease: Expo.easeInOut,
             })
             .fromTo(
