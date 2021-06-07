@@ -25,7 +25,7 @@ a {
 }
 
 .content-title {
-    font-size: 4rem;
+    font-size: 3rem;
     text-transform: uppercase;
     color: $blue;
 }
@@ -63,19 +63,20 @@ a {
 
 .h2-title {
     @include flex(center);
-    font-size: 20rem;
+    font-size: 15rem;
     text-transform: uppercase;
     color: $off-white;
-    height: 100vh;
+    height: 100%;
 }
 
 .hero-title {
-    font-size: 20rem;
+    font-size: 15rem;
     text-transform: uppercase;
     color: rgba($green, 0.5);
-    position: absolute;
-    top: 20%;
-    left: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
 }
 
 #btn-link {
